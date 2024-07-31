@@ -16,7 +16,3 @@ npm install
 npx pm2 start src/index.js --name planeaciones
 npx pm2 log
 exec /usr/sbin/sshd -D
-#Iniciar ssh
-#pm2 start /usr/sbin/sshd --name sshd --interpreter bash -- -D
-# PM2 logs
-#pm2 logs
