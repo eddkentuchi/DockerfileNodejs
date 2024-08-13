@@ -20,7 +20,11 @@ fi
 #Iniciar aplicativo
 cd /app/planning
 echo "Levantando servicio"
-npx pm2 start src/index.js --name planeaciones &
+pwd
+npx pm2 list
+pm2 delete all
+npx pm2 list
+npx pm2 start src/index.js --name planeaciones
 echo "Se levanto el servicio"
 npx pm2 log &
 echo "Se leventará ssh"
